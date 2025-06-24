@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #263238;
+}
+
+.container {
+    width: 100%;
+}
+
+.search-container {
+    position: relative;
+    width: 550px;
+    height: 50px;
+    background-color: #ffffffcc;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+#input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px 160px 5px 15px;
+    font-size: 16px;
+    color: #263238;
+}
+
+#search {
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#search:hover {
+    background-color: #1565c0;
+}
+
+.profile-card {
+    width: 500px;
+    background-color: #ffffffcc;
+    margin: 30px auto 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+    font-family: 'Lobster Two', cursive;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #90a4ae;
+}
+
+#prof-img {
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+    box-shadow: 0 3px 10px #1e88e5;
+}
+
+.name {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #1e88e5;
+}
+
+#username {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: #d81b60;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bio {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #37474f;
+}
+
+#bio {
+    font-weight: bold;
+    color: #00897b;
+}
+
+p {
+    margin-top: 12px;
+}
+
+.follow {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    border-top: 1px solid #90a4ae;
+    font-size: 20px;
+    background-color: #f1f8ff;
+}
+
+.follow div {
+    width: 50%;
+    text-align: center;
+    padding-top: 15px;
+    color: #1e88e5;
+}
+
+.followers {
+    border-right: 1px solid #90a4ae;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-card {
+        width: 450px;
+        margin: 30px auto 15px;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+}
